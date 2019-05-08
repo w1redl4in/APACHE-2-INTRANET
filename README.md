@@ -36,7 +36,7 @@
     a2ensite nomedoseusite.conf
     systemctl reload apache2
  
- # "DNS" 
+ # "DNS" (na máquina Cliente)
         sudo su
         nano /etc/hosts
         
