@@ -33,8 +33,14 @@
     </VirtualHost>
     
  
- # Finalizando
+ # Subindo pagina
     a2ensite nomedoseusite.conf
     systemctl reload apache2
  
-    
+ # Editando tabela hosts no C1
+        sudo su
+        nano /etc/hosts
+        
+        
+        
+        192.168.100.11      nomedoseusite
