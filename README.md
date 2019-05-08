@@ -1,14 +1,14 @@
-# APACHE2 Download
+# Baixando Apache
     sudo su
-    apt install apache2
+    apt install apache2 -y
     
-# Criacao de pasta/pagina
+# Criação de diferentes "domínios"
     cd /var/www/html/
     mkdir SUAPASTA
     cd SUAPASTA 
     nano index.html
     
-## Edicao basica de html
+## Modelo básico de html
     <html>
       <head>
         <title>teste</title>
@@ -18,7 +18,7 @@
       </body>
     </html>
 
-# Configuracao APACHE2
+# Configuracao Apache
     cd /etc/apache2/sites-available/
     cp 000-default.conf NOMEDOSEUSITE.conf
     nano NOMEDOSEUSITE.conf
@@ -33,11 +33,12 @@
     </VirtualHost>
     
  
- # Subindo pagina
+ # Subindo a página
+    cd /etc/apache2/sites-available/
     a2ensite nomedoseusite.conf
     systemctl reload apache2
  
- # Editando tabela hosts no C1
+ # "DNS" 
         sudo su
         nano /etc/hosts
         
