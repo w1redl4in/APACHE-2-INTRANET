@@ -2,7 +2,7 @@
     sudo su
     apt install apache2 
     
-# Criação de diferentes "domínios"
+# Criação de "domínios"
     cd /var/www/html/
     mkdir SUAPASTA
     cd SUAPASTA 
