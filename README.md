@@ -1,6 +1,6 @@
-# Baixando Apache
+# Instalação 
     sudo su
-    apt install apache2 -y
+    apt install apache2 
     
 # Criação de diferentes "domínios"
     cd /var/www/html/
@@ -18,12 +18,10 @@
       </body>
     </html>
 
-# Configuracao Apache
+# Configuração do site/apache 
     cd /etc/apache2/sites-available/
-    cp 000-default.conf NOMEDOSEUSITE.conf
     nano NOMEDOSEUSITE.conf
-    
-## Configuracao do arquivo
+   
     <VirtualHost *:80>
           ServerName nomedoseusite
           ServerAdmin root@nomedasuamaquina
