@@ -45,7 +45,6 @@
         192.168.100.11      nomedoseusite
  
  # Vídeo Prático
- # Vídeo explicativo
    [YouTube](https://youtu.be/Tu_gMVD8PKQ)
     
 
